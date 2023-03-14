@@ -1,3 +1,3 @@
 # Triple-A-Edits-Website
-Sic Parvis Magna - 
+Link no Webserver UFPE - 
 https://cin.ufpe.br/~aaa10/
