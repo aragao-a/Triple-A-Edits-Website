@@ -1,0 +1,773 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+.body,html {
+    -webkit-text-size-adjust: none;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.50)),url(alt_alt.png);
+    background-size: cover;
+    background-position: center;
+    position: static;
+
+}
+.navbar{
+    width: 35%;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+    bottom: -210px;
+    justify-content: center;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+    justify-content: center;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+
+}
+.navbar ul li a{
+    font-family: 'VisbyHeavy';
+    font-size: 13px;
+    letter-spacing: 10;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0dd3f3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-family: 'DINBold';
+    letter-spacing: 5;
+    font-size: 110px;
+    margin-top: 110px;
+    position: relative;
+    top: 60px;
+
+}
+.header{
+
+    width: 0%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50px;       
+
+}
+.content p{
+    font-family: 'VisbyLight';
+    letter-spacing: 1.5;
+    margin: 20px auto;
+    line-height: 25px;
+    position: relative;
+    top: 35px;
+}
+button{
+    font-family: 'VisbyHeavy';
+    letter-spacing: 3;
+    width: 260px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0dd3f3;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    overflow: hidden;
+}
+span{
+    background: #00a2bb;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover {
+    border: none;
+
+}
+.type2{
+    width: 13%;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 220px
+
+}
+.st_banner{
+
+    background-image: url(st_page.png);
+    background-size: 300px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.tagz{
+    width: 17%;
+    position: absolute;
+    bottom: 1%;
+    left: 41%;
+
+}
+.secondary_banner{
+    background-image: url(second_banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.title_2{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'DINBold';
+    letter-spacing: 5;
+    font-size: 80px;
+    position: relative;
+    top: 65px;
+
+}
+.bodytext_2{
+    resize: none;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'VisbyLight';
+    font-size: 18;
+    letter-spacing: 1.5;
+    margin: 275px auto;
+    line-height: 25px;
+    position: relative;
+
+}
+.ray{
+    resize: none;
+    position: absolute;
+    top: 15%;
+    right: 61.5%;
+    width: 8%;
+    transition: .3s ease;
+    min-width: 8%
+
+}
+.ray:hover{
+    transform: scale(3.25);
+    translate: 50%;
+    min-width: 8%
+
+}
+.yago{
+    resize: none;
+    position: absolute;
+    top: 52%;
+    right: 60%;
+    width: 8%;
+    transition: .3s ease;
+
+}
+.yago:hover{
+    transform: scale(2.8);
+    translate: 160%;
+
+}
+.frames{
+    resize: none;
+    position: absolute;
+    top: 52%;
+    right: 32.25%;
+    width: 8%;
+    transition: .3s ease;
+
+}
+.frames:hover{
+    transform: scale(3.5);
+    translate: -160%;
+
+}
+.amargor{
+    resize: none;
+    position: absolute;
+    top: 15%;
+    right: 30.75%;
+    width: 8%;
+    transition: .3s ease;
+
+}
+.amargor:hover{
+    transform: scale(3.25);
+    translate: -60%;
+
+}
+.job_banner{
+    display: none;
+    background-image: url(somejobs.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.frame_work{
+    display: none;
+    background-image: url(frames_cell.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.raywork{
+    display: none;
+    background-image: url(ray_cell.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.yagocell{
+    display: none;
+    background-image: url(yago_cell.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.projects{
+    display: none;
+    background-image: url(someprjects.png);
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.sw{
+    display: none;
+    background-image: url(sw_cell.png);
+    height: 57vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.dark{
+    display: none;
+    background-image: url(dark.png);
+    height: 57vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.ranking{
+    display: none;
+    background-image: url(penultimate_cell.png);
+    height: 57vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.final_mobile{
+    display: none;
+    background-image: url(last_cell.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.pc_jobs{
+    background-image: url(pc_jobs.png);
+    height: 115vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.pc_setup{
+    background-image: url(setup_pc.png);
+    height: 115vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.final_banner{
+    background-image: url(contact.png);
+    background-size: 300px;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+@media (max-width: 680px) {
+
+    .banner{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0,0,0,0.50)),url(alt_alt.png);
+        background-size: cover;
+        background-position: center;
+        position: static;
+    
+    }
+    .body,html {
+        -webkit-font-smoothing: antialiased; 
+        -webkit-text-size-adjust: none;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main {
+        flex: 1;
+        overflow: scroll;
+
+    }
+    .navbar{
+        width: 15%;
+        margin: auto;
+        padding: 50px;
+        position: relative;
+        bottom: -100px;
+        justify-content: center;
+    
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 30px;
+        position: relative;
+        justify-content: center;
+    
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+    
+    }
+    .navbar ul li a{
+        font-family: 'VisbyHeavy';
+        font-size: 6px;
+        letter-spacing: 5;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #0dd3f3;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+        
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 52%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .content h1{
+        opacity: 0%;
+        width: 100%;
+        font-family: 'DINBold';
+        letter-spacing: 3;
+        font-size: 3.5rem;
+        margin-top: 110px;
+        position: relative;
+        top: 50px;
+    
+    }
+    .header{
+        width: 86%;
+        position: absolute;
+        top: 46.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 300px;      
+
+    }
+    .content p{
+        font-family: 'VisbyLight';
+        font-size: 0.65rem;
+        letter-spacing: 1.5;
+        margin: 20px 30px;
+        line-height: 14px;
+        position: relative;
+        top: 32px;
+    }
+    button{
+        font-family: 'VisbyLight';
+        letter-spacing: 2;
+        width: 35%;
+        padding: 12px 0;
+        text-align: center;
+        margin: 20px 11px;
+        border-radius: 25px;
+        font-size: 0.40rem;
+        border: 2px solid #0dd3f3;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+        overflow: hidden;
+        text-transform: uppercase;
+    }
+    span{
+        background: #00a2bb;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    
+    }
+    button:hover span{
+        width: 100%;
+    
+    }
+    button:hover {
+        border: none;
+    
+    }
+    .type2{
+        width: 53%;
+        position: absolute;
+        top: 21.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100px;
+    
+    }
+    .st_banner{
+
+        display: none;
+    
+        background-image: url(st_page.png);
+        background-size: 300px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .tagz{
+        width: 17%;
+        position: absolute;
+        bottom: 18px;
+        left: 41%;
+    
+    }
+    .secondary_banner{
+        background-image: url(phone_backgr.png);
+        height: 110vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .title_2{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+        opacity: 0%;
+        font-family: 'DINBold';
+        letter-spacing: 5;
+        font-size: 80px;
+        position: relative;
+        top: 65px;
+    
+    }
+    .bodytext_2{
+
+        display: none;
+
+        font-family: 'VisbyLight';
+        font-weight: lighter;
+        font-size: 0.55rem;
+        letter-spacing: 1.5;
+        margin: 20px 0px;
+        line-height: 14px;
+        position: relative;
+        top: 40%;
+    
+    }
+    .ray{
+        display: none;
+        resize: none;
+        position: absolute;
+        top: 31%;
+        right: 80%;
+        width: 16%;
+        transition: .3s ease;
+        min-width: 8%
+    
+    }
+    .ray:hover{
+        transform: scale(3.5);
+        translate: 60%;
+        min-width: 8%
+    
+    }
+    .yago{
+        display: none;
+        resize: none;
+        position: absolute;
+        top: 52%;
+        right: 60%;
+        width: 8%;
+        transition: .3s ease;
+    
+    }
+    .yago:hover{
+        transform: scale(2.8);
+        translate: 160%;
+    
+    }
+    .frames{
+        display: none;
+        resize: none;
+        position: absolute;
+        top: 31%;
+        right: 4.25%;
+        width: 16%;
+        transition: .3s ease;
+    
+    }
+    .frames:hover{
+        transform: scale(3.5);
+        translate: -160%;
+    
+    }
+    .amargor{
+        display: none;
+        resize: none;
+        position: absolute;
+        top: 10%;
+        right: 33.75%;
+        width: 8%;
+        transition: .3s ease;
+    
+    }
+    .amargor:hover{
+        transform: scale(3.25);
+        translate: -60%;
+    
+    }
+    .job_banner{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 50vh;
+        display: flex;
+        width: 100%;
+        background-image: url(somejobs.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .frame_work{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: flex;
+        background-image: url(frames_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .raywork{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: none;
+        background-image: url(ray_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .yagocell{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: none;
+        background-image: url(yago_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .projects{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: flex;
+        background-image: url(someprjects.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .sw{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: flex;
+        background-image: url(sw_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .ranking{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: flex;
+        background-image: url(penultimate_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .final_mobile{
+        padding-top: 21rem;
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        height: 20vh;
+        display: flex;
+        background-image: url(last_cell.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .pc_jobs{
+        display: none;
+        background-image: url(pc_jobs.png);
+        height: 130vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .pc_setup{
+        display: none;
+        background-image: url(setup_pc.png);
+        height: 130vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+    .final_banner{
+        display: none;
+        background-image: url(contact.png);
+        background-size: 300px;
+        height: 110vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    
+    }
+
+}
